@@ -14,30 +14,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<header class="header">
-        <img class="logo"  src="images/logo/Booki@3x.png" alt="logo du site booki ">
-        <section class="topdroite">
-            <a class="buttonTop buttonhover" href="#hebergements">Hébergements</a>
-            <a class="buttonTop buttonhover" href="#activites">Activités</a>
-        </section>
-</header>
+
 <body>
     <div class="main-container">
+        <header class="header-container">
+            <img class="logo"  src="images/logo/Booki@3x.png" alt="logo du site booki ">
+            <nav class="menu-nav">
+                <a class="buttonTop buttonhover" href="#hebergements">Hébergements</a>
+                <a class="buttonTop buttonhover" href="#activites">Activités</a>
+            </nav>
+        </header>
+
         <main>
             <article>
                 <h1>Trouvez votre hébergement pour vos vacances de rêve </h1>
                 <p>En plein centre ville ou en pleine nature </p>
             </article>
-            <!-- revoir background -->
+            <!-- Formulaiore de recherche -->
             <div class="boxrecherche ">
-                    <form class="boxrecherche"method="get" action="">
-                            <i class="logomap fa-solid fa-location-dot fa-xl"></i>
+                    <form class="boxrecherche" method="get" action="">
+                            <i class="logomap fa-solid fa-location-dot" style="color: #000000;"></i>
                             <input class="imput" type="texte" name="localisation" id="localisation" size="30"  placeholder="Marseille, France"/>
                             <input type="submit" name="submit" class="submit" value="Rechercher" />
                     </form>
             </div>
             <section class="container-filtres">
-                <h3>Filtres</h3>
+                <div >
+                    <h3>Filtres</h3>
+                </div>
                 <div class="filtres">
                     <i class="logofiltres fa-solid fa-money-bill-wave"></i>
                     <h4>Economique</h4>
@@ -56,7 +60,8 @@
                 </div>
             </section>
             <div class="info">
-                <i class="logoinfo fa-solid fa-info"></i>
+                <i class="logoinfo fa-solid fa-info fa-xs" ></i>
+                
                 <p>Plus de 500 logments sont disponibles dans cette ville </p>
             </div>
             <div class="hebergements-and-populaires">
