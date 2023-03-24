@@ -12,6 +12,7 @@
 }
 
 .logo{
+ 
     width: 75px;
 }
 .fa-solid {
@@ -165,11 +166,10 @@ body {
 .header{
     margin-top: 0px;
 }
-
+/*from recherche
+revoir taille plus bordure*/
 .boxrecherche{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 400px;
     box-sizing: border-box;
     text-decoration: none;
@@ -178,13 +178,12 @@ body {
     border-right: none;
 }
 .logomap{
-    width: auto;
-    align-items: center;
-    background-color: #D9D9D9;  
+    background-color: #D9D9D9; 
+    display: flex; 
     justify-content: center;
     align-items: center;
-
     border-radius:20px 0px 0px 20px ;
+    width: 50px;
 }
 .imput{
     margin: 0px;
@@ -207,27 +206,31 @@ body {
     border: none;
 }
 
-/*Le code ci dessous correspond aux filtres*/
+/*Filtres*/
 .container-filtres{
+    width: 60%;
+    height: 30px;
+    margin-top: 10px;
     display: flex;
-    margin: 10px;
+    justify-content: space-between;
+    align-items:baseline;
+}
+.filtres{
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    border: solid #D9D9D9 1px;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
 }
 .logofiltres{
-    padding: 10px;
-    vertical-align: middle;
+    padding: 0px 10px 0px 5px;
+    align-items: center;
     width: auto;
     height: auto;
 }
-.filtres{
-    padding-right: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10px;
-    width: auto;
-    border: solid #D9D9D9 1px;
-    border-radius: 50px;
-}
+
 
 .filtres:hover{
     background-color: #deebff ;
@@ -244,6 +247,12 @@ body {
     width: 10px;
     border-radius: 50%;
     border: solid #D9D9D9;
+}
+
+.activites{
+    background-color: var(--main-bg-color);
+
+    display:flex;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
