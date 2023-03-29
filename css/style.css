@@ -220,7 +220,7 @@ body {
 }
 .imput:focus{
     outline: none;
-    font-weight: none;
+   
     font-size: initial;
 }
 .submit{
@@ -291,17 +291,22 @@ body {
 }
 
 .activites .card{
-    width: 22%;
+    width: 24%;
     height: 450px;
     border-radius: 20px;
     background-color: white;
     padding: 0px;
 
 }
+.activites .card-title{
+    padding: 19px 20px;
+    font-size: 16px;
+}
 .activites .section-title{
     width: 100%;
     display: flex;
-    margin: 65px 0px 30px 0px;
+    margin: 65px 0px 0px 0px;
+    justify-content: flex-start;
 }
 .activites img{
     padding: 0;
@@ -311,11 +316,9 @@ body {
     border-radius: 20px 20px 0px 0px;
 }
 .activites h3{
-    justify-content: center;
     display: flex;
-    align-items: center;
     margin: 0px;
-    padding: 20px 19px;
+    padding: 20px 0px;
 }
 
 /*** FOOTER ***/
