@@ -25,11 +25,12 @@ body {
 }
 
 .main-container {
-    width: 100%;
     max-width: 1440px;
+    width: 100%;
+   
     padding: 0px 50px 0px 50px;
     box-sizing: border-box;
-    
+    min-width: 1024px;
 }
 
 .section-title {
@@ -177,7 +178,7 @@ body {
 }
 
 
-/* boutton header */
+/* header */
 .buttonTop{
     margin: 3px 0px 0px 65px;
     text-decoration: none;
@@ -248,12 +249,13 @@ body {
 
 /*Filtres*/
 .container-filtres{
-    width: 55%;
+    width: 60%;
     height: 50px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items:baseline;
+    gap: 10px;
 }
 .filtres{
     display: flex;
@@ -358,7 +360,7 @@ body {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets, less/equal than 1024px) 
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
@@ -391,8 +393,8 @@ body {
         font-size: 13px;
     }
 }
-
-/* Small devices (phones, less than 768px) */
+*/
+/* Small devices (phones, less than 768px) 
 @media (max-width: 767.98px) {
-    /* ... */
 }
+*/
